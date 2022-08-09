@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bo_tron"
+        android:layout_marginTop="5dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMaPM"
+                android:textSize="14dp"
+                android:text="Ma PM"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTenTV"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Ten TV"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvTenSach"
+                    android:textStyle="bold"
+                    android:layout_weight="2"
+                    android:text="Ten Sach"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvTraSach"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="italic"
+                    android:text="Tra Sach"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvTienThue"
+                    android:layout_weight="1"
+                    android:text="Tien Thue"
+                    android:textStyle="italic"
+                    android:textSize="14dp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvNgayPM"
+                    android:layout_weight="1"
+                    android:text="Ngay"
+                    android:textStyle="italic"
+                    android:textSize="14dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:id="@+id/imgDeleteLS"
+            android:layout_weight="1"
+            android:src="@drawable/outline_backspace_black_48"/>
+    </LinearLayout>
+
+
+</LinearLayout>

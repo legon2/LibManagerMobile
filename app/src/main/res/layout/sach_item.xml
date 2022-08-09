@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bo_tron">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="10">
+            <TextView
+                android:id="@+id/tvMaSach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="Ma Sach"/>
+            <TextView
+                android:id="@+id/tvLoai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Loai Sach"/>
+            <TextView
+                android:id="@+id/tvTenSach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Ten Sach"/>
+            <TextView
+                android:id="@+id/tvGiaThue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="Gia Thue"
+                android:textStyle="italic"/>
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imgDeleteLS"
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:layout_weight="1"
+            android:src="@drawable/outline_backspace_black_48"/>
+    </LinearLayout>
+
+</LinearLayout>

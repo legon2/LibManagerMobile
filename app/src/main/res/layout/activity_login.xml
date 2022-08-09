@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgLogin"
+        android:layout_width="379dp"
+        android:layout_height="109dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="50dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bo_tron"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edUserName"
+
+            android:hint="Tên đăng nhập"/>
+        
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_marginBottom="20sp"
+        android:background="@drawable/bo_tron"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edPassword"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:hint="Mật khẩu"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu mật khẩu"
+        android:id="@+id/chkRememberPass"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLogin"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/bo_tron_button"
+            android:text="Đăng nhập"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCanel"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/bo_tron_button"
+            android:text="Hủy"/>
+
+    </LinearLayout>
+
+</LinearLayout>

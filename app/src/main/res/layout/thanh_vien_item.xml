@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bo_tron">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMaTV"
+                android:text="Mã TV"
+                android:textSize="14dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTenTV"
+                android:text="Tên TV"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvNamSinh"
+                android:text="Năm Sinh"
+                android:textStyle="italic"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:id="@+id/imgDeleteLS"
+            android:layout_weight="1"
+            android:src="@drawable/outline_backspace_black_48"/>
+    </LinearLayout>
+
+</LinearLayout>
